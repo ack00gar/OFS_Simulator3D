@@ -37,3 +37,22 @@ The setup script will:
 ### Export Options
 - **ARM64** - Native Apple Silicon (M1/M2/M3) - Best performance
 - **Universal Binary** - Works on both Apple Silicon and Intel Macs
+
+## Using with OpenFunscripter
+
+Once built, you need to connect the simulator to your OFS installation:
+
+**Quick Setup:**
+1. Launch **OpenFunscripter** (WebSocket API enabled on port 8080)
+2. Launch **FunscriptSimulator3D.app**
+3. The simulator auto-connects to OFS
+4. Load and play a funscript in OFS - the 3D simulator will respond in real-time
+
+**For detailed setup instructions**, see [SETUP_WITH_OFS.md](SETUP_WITH_OFS.md)
+
+### How It Works
+
+The simulator connects to OFS via WebSocket (`ws://127.0.0.1:8080/ofs`) and receives:
+- Real-time playback position
+- Funscript data for all axes (stroke, twist, roll, pitch, sway, surge)
+- Synchronized updates as you play/pause/seek in OFS
