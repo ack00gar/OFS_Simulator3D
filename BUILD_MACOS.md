@@ -1,6 +1,6 @@
 # Building OFS_Simulator3D for macOS (Apple Silicon & Intel)
 
-This guide shows how to build and export OFS_Simulator3D for macOS on Apple Silicon (M1/M2/M3) and Intel Macs.
+This guide shows how to build and export OFS_Simulator3D for macOS on Apple Silicon (M1, M2, M3, M4, M5) and Intel Macs.
 
 ## Prerequisites
 
@@ -172,7 +172,7 @@ texture_format/etc2=false
 
 ## Architecture Support
 
-### Apple Silicon (M1/M2/M3)
+### Apple Silicon (M1, M2, M3, M4, M5)
 Godot 3.5.3 Mono has **native ARM64 support** and runs without Rosetta 2. Export as:
 - **ARM64 only** - Smallest size, best performance on Apple Silicon
 - **Universal Binary** - Works on both ARM64 and Intel (larger file size)
